@@ -11,7 +11,7 @@ def hello_world():
     print(state, num_sightings)
     try:
         if num_sightings:
-            results = sighting_scraper(state, num_sightings)
+            results = sighting_scraper(state, int(num_sightings))
         else: 
             results = sighting_scraper(state)
         return {"data": results}
